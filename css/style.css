@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
+
+:root {
+    --primary-color: #000000;
+    --secondary-color: #f6f6f6;
+    --tertiary-color: #22D4FD;
+    --wsp-button-color: #25D366;
+    
+    --hovered-color: #272727;
+    --navbar-hovered-color: #1f9ebb;
+    
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Fira Code", monospace;
+    font-optical-sizing: auto;
+}
+
+body {
+    background: #000;
+    color: var(--secondary-color);
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.img__logo__dev {
+    width: 42px;
+    height: 42px;
+    filter: invert(28%) sepia(84%) saturate(7255%) hue-rotate(179deg) brightness(103%) contrast(106%);
+}
+
+
+.logo a {
+    text-decoration: none;
+    color: var(--tertiary-color);
+    font-size: 2rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+} 
+
+.navbar a {
+    color: var(--tertiary-color);
+    text-decoration: none;
+    margin: 0 1rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    transition: color 0.5s ease;
+}
+
+.navbar a:hover {
+    color: var(--navbar-hovered-color);  
+}
+
+.title-span {
+    color: var(--tertiary-color);
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2% 15%;
+}
+
+.container__about {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.container__about__title {
+    font-size: 2rem;
+}
+
+.container__about__paragrahp {
+    font-size: 1.5rem;
+}
+
+.subtitle-span {
+    color: var(--tertiary-color);
+    font-weight: 500;
+}
+
+.container__about__paragrahp_wsp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container__links_link_wsp {
+    width: 42%;
+    border: 1px solid var(--wsp-button-color);
+    text-align: center;
+    padding: 21.5px;
+    border-radius: 16px;
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-size: 1.25rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.container__links_link_wsp:hover {
+    background-color: var(--wsp-button-color);
+    border: 2px solid var(--secondary-color);
+    color: #000;
+}
+
+.img__social {
+    width: 42px;
+    height: 42px;
+}
+
+.container__divisor {
+    color: var(--secondary-color);
+    margin-bottom: 15px;
+}
+
+.container__links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.container__links_link {
+    width: 50%;
+    text-align: center;
+    padding: 21.5px 0;
+    border-radius: 1rem;
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-size: 1.5rem;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    border: 1px solid var(--tertiary-color);
+    justify-content: center;
+    transition: all 0.5s ease;
+}
+
+.container__links_link:hover {
+    background-color: var(--tertiary-color);
+    border: 2px solid var(--secondary-color);
+    color: var(--primary-color);
+}
+
+.image__container {
+    position: relative;
+    display: inline-block;
+    height: 80vh;
+}
+
+.image__container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70%;
+    background-image: url('/img/code.png');
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+.image__profile {
+    border: 2px solid var(--secondary-color);
+    border-radius: 1rem;
+    z-index: 1;
+}
+
+.footer {
+    background-color: var(--tertiary-color);
+    padding: 1.5rem;
+    color: var(--primary-color);
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.footer__paragraph {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer__paragraph img {
+    width: 42px;
+    height: 42px;
+}
+
+@media (max-width: 1200px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+        justify-content: center;
+        margin: .3rem;
+    }
+
+    .nav-links {
+        display: flex;
+        gap: 10px;
+    }
+
+    .nav-links a {
+        font-size: 1.3rem;
+    }
+
+    .container {
+        flex-direction: column-reverse;
+        gap: 1.5rem;
+        padding: 5%;
+    }
+
+    .container__about {
+        width: auto;
+    }
+
+    .container__about__title {
+        font-size: 1.3rem;
+    }
+
+    .container__about__paragrahp {
+        font-size: 1rem;
+    }
+
+    .container__about__paragrahp_wsp {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .container__about__paragrahp_wsp a {
+        font-size: 1rem;
+    }
+
+    .container__about__paragrahp_wsp a img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .container__links {
+        width: 100%;
+        text-align: center;
+    }
+
+    .container__links h2 {
+        font-size: 1.1rem;
+        margin-bottom: 10px;
+    }
+
+    .container__links a {
+        font-size: 1rem;
+        padding: .8rem;
+    }
+
+    .container__links_link a img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .image__container {
+        position: relative;
+        height: 50%;
+        width: auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    .image__container::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('/img/code.png');
+        background-size: cover;
+        background-position: center;
+        z-index: -1;
+    }
+
+    .image__profile {
+        width: 100%;
+        height: 50%;
+        border: 2px solid var(--secondary-color);
+        border-radius: 1rem;
+        z-index: 1;
+    }
+
+    .footer {
+        padding: 1.5rem;
+    }
+
+    .footer__paragraph {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.2rem;
+        font-weight: 600;
+        gap: 10px;
+    }
+
+    .footer__paragraph img {
+        width: 30px;
+        height: 30px;
+    }
+}
