@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ﻿# Mini Portafolio Alejandro Santis
 
 ¡Hola! Soy Alejandro Santis, desarrollador Back-end con especialización en < PHP, MySQL, HTML, CSS y JAVASCRIPT />. Ayudo a pequeños negocios a llevar a cabo buenas ideas y a crecer usando tecnologicas de punta.
