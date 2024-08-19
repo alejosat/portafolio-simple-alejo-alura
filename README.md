@@ -17,4 +17,3 @@ Si tienes alguna pregunta o sugerencia, no dudes en contactarme a través de [as
 
 ## visit me
 [portafolio](https://alejosat.github.io/portafolio-simple-alejo-alura/)
->>>>>>> 951b89a89ccdf20690b9686b41efb0140c068af6
